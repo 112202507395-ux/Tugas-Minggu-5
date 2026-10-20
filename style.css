@@ -1,0 +1,187 @@
+/* ==========================================
+   GLOBAL & BASE STYLES
+   ========================================== */
+body {
+    padding-top: 85px;
+    background-color: #fff5f7; /* Background Pink Soft */
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    color: #4a3e3e;
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   NAVBAR STYLES
+   ========================================== */
+.navbar-custom {
+    background-color: #d63384 !important; /* Deep Pink Modern */
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link {
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffe5ec !important;
+}
+
+.dropdown-menu {
+    border-radius: 12px;
+}
+
+.dropdown-item:hover {
+    background-color: #fff0f3;
+    color: #d63384;
+}
+
+/* ==========================================
+   HERO / BANNER SECTION
+   ========================================== */
+.hero-section {
+    background: linear-gradient(135deg, #ff85a1 0%, #ffafcc 100%);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 35px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(255, 133, 161, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hero-section:hover {
+    transform: translateY(-2px);
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 8px 16px rgba(214, 51, 132, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* ==========================================
+   SECTION TITLES
+   ========================================== */
+.section-title {
+    position: relative;
+    font-weight: 700;
+    color: #851842;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #ff70a6;
+    border-radius: 2px;
+    margin-top: 6px;
+}
+
+/* ==========================================
+   CARD STYLING
+   ========================================== */
+.card-custom {
+    border: 1px solid #ffe5ec;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.15);
+    transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(255, 143, 171, 0.25);
+}
+
+/* ==========================================
+   TABLE STYLING (PENGALAMAN)
+   ========================================== */
+.table-custom {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-custom thead {
+    background-color: #d63384;
+    color: #ffffff;
+}
+
+.table-custom tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table-custom tbody tr:hover {
+    background-color: #fff0f3;
+}
+
+.table-custom .badge {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-radius: 20px;
+}
+
+/* ==========================================
+   SERTIFIKAT & DOKUMENTASI
+   ========================================== */
+.cert-card-inner {
+    border: 1px solid #ffe5ec;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.cert-card-inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.3);
+}
+
+.cert-img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cert-card-inner:hover .cert-img {
+    transform: scale(1.02);
+}
+
+/* ==========================================
+   FORM & BUTTONS
+   ========================================== */
+.form-control:focus {
+    border-color: #ff758f;
+    box-shadow: 0 0 0 0.25rem rgba(255, 117, 143, 0.25);
+}
+
+.btn-pink {
+    background-color: #ff4d6d;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.btn-pink:hover {
+    background-color: #c9184a;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(201, 24, 74, 0.3);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    letter-spacing: 0.3px;
+    font-size: 0.9rem;
+}

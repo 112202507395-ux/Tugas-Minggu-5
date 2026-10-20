@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Khusnul</title>
+    <!-- Path Bootstrap lokal kamu -->
+    <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <style>
+        body {
+            padding-top: 85px;
+            background-color: #fff5f7; /* Background Pink Sangat Soft */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a3e3e;
+        }
+
+        /* Navbar Tema Pink Elegant */
+        .navbar-custom {
+            background-color: #d63384 !important; /* Deep Pink Modern */
+            backdrop-filter: blur(10px);
+        }
+
+        /* Hero Banner Gradient Pink Soft */
+        .hero-section {
+            background: linear-gradient(135deg, #ff85a1 0%, #ffafcc 100%);
+            color: #ffffff;
+            border-radius: 20px;
+            padding: 35px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(255, 133, 161, 0.3);
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 8px 16px rgba(214, 51, 132, 0.2);
+        }
+
+        /* Card Styling Modern Pink Tint */
+        .card-custom {
+            border: 1px solid #ffe5ec;
+            border-radius: 16px;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(255, 143, 171, 0.25);
+        }
+
+        /* Heading Style Pink Accent */
+        .section-title {
+            position: relative;
+            font-weight: 700;
+            color: #851842;
+            margin-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: #ff70a6;
+            border-radius: 2px;
+            margin-top: 6px;
+        }
+
+        /* Table Aesthetics Pink */
+        .table-custom thead {
+            background-color: #d63384;
+            color: #ffffff;
+        }
+
+        .table-custom tbody tr:hover {
+            background-color: #fff0f3;
+        }
+
+        /* Sertifikat Hover */
+        .cert-card {
+            overflow: hidden;
+        }
+
+        .cert-img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .card-custom:hover .cert-img {
+            transform: scale(1.03);
+        }
+
+        /* Button Pink */
+        .btn-pink {
+            background-color: #ff4d6d;
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-pink:hover {
+            background-color: #c9184a;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">MadebyInuls</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-medium">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pendidikan">Pendidikan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pengalaman">Pengalaman</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sertifikat & Kegiatan
+              </a>
+              <ul class="dropdown-menu shadow border-0">
+                <li><a class="dropdown-item" href="#sertifikat">ICBC 2026</a></li>
+                <li><a class="dropdown-item" href="#sertifikat">Sisgath 2026</a></li>
+                <li><a class="dropdown-item" href="#sertifikat">Sensasi 2026</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#sertifikat">PCP 2026</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 border-0 bg-light" type="search" placeholder="Cari..." aria-label="Search"/>
+            <button class="btn btn-outline-light fw-semibold px-3" type="submit">Cari</button>
+          </form>
+        </div>
+      </div>
+    </nav>    
+
+    <!-- MAIN CONTAINER -->
+    <div class="container my-4">
+
+        <!-- HERO / TENTANG SAYA -->
+        <section id="beranda" class="hero-section">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-center mb-3 mb-md-0">
+                    <img src="/images/images khusnul.jpeg" class="img-fluid rounded-circle profile-img" alt="Foto Profil Khusnul">
+                </div>
+                <div class="col-md-9 text-center text-md-start">
+                    <h1 class="fw-bold mb-1 display-6">Halo, Saya Khusnul!</h1>
+                    <p class="fs-5 text-white fw-medium mb-2 opacity-90">Mahasiswa Sistem Informasi | Universitas Dian Nuswantoro</p>
+                    <p class="mb-0 text-white opacity-90">
+                        Selamat datang di portofolio pribadi saya. Saya memiliki ketertarikan tinggi pada dunia teknologi informasi, khususnya perancangan UI/UX, analisis sistem informasi, dan pengembangan web responsif.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TENTANG PENDIDIKAN & MINAT -->
+        <div class="row mb-4" id="pendidikan">
+            <div class="col-md-6 mb-3">
+                <div class="card card-custom h-100 p-4">
+                    <h4 class="fw-bold mb-3" style="color: #d63384;">Pendidikan</h4>
+                    <p class="mb-1 fs-5 text-dark"><strong>Universitas Dian Nuswantoro (UDINUS)</strong></p>
+                    <p class="text-muted mb-3">S1 Sistem Informasi — Fakultas Teknologi Cerdas</p>
+                    <p class="small text-secondary mb-0">
+                        Fokus mempelajari analisis proses bisnis, perancangan basis data, pemodelan Use Case Diagram, pemrograman C++, serta pengembangan antarmuka pengguna (UI/UX).
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-3">
+                <div class="card card-custom h-100 p-4">
+                    <h4 class="fw-bold mb-3" style="color: #d63384;">Minat & Keahlian</h4>
+                    <p class="text-secondary mb-0">
+                        Aktif dalam pengembangan aplikasi web menggunakan HTML5, CSS, Bootstrap, serta eksplorasi prototyping UI/UX menggunakan Figma. Selain itu, saya juga tertarik pada pengorganisasian acara dan manajemen proyek.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PENGALAMAN ORGANISASI -->
+        <section id="pengalaman" class="mb-5">
+            <h3 class="section-title">Pengalaman Organisasi & Kepanitiaan</h3>
+            <div class="card card-custom p-3">
+                <div class="table-responsive">
+                    <table class="table table-hover table-custom align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="py-3">No</th>
+                                <th scope="col" class="py-3">Nama Kegiatan / Proyek</th>
+                                <th scope="col" class="py-3">Jabatan</th>
+                                <th scope="col" class="py-3">Penyelenggara</th>
+                                <th scope="col" class="py-3">Tahun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>International Canvas Business Plan Competition (ICBC) 2026</td>
+                                <td><span class="badge px-3 py-2" style="background-color: #ff4d6d;">Staf Acara</span></td>
+                                <td>Hm Sisfo UDINUS</td>
+                                <td>2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Seminar Nasional Sistem Informasi (Sensasi) 2026</td>
+                                <td><span class="badge px-3 py-2" style="background-color: #e7899a;">Prosiding</span></td>
+                                <td>Hm Sisfo UDINUS</td>
+                                <td>2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Pembekalan Calon Pemimpin (PCP) 2026</td>
+                                <td><span class="badge px-3 py-2" style="background-color: #c9184a;">Peserta</span></td>
+                                <td>FIK UDINUS</td>
+                                <td>2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Dinus Inside FIK 2026</td>
+                                <td><span class="badge px-3 py-2" style="background-color: #b02e53;">Staf Konsumsi</span></td>
+                                <td>FIK UDINUS</td>
+                                <td>2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Sisfo Gathering (Sisgath) 2026</td>
+                                <td><span class="badge px-3 py-2" style="background-color: #ff4d6d;">Staf Acara</span></td>
+                                <td>Hm Sisfo UDINUS</td>
+                                <td>2026</td>
+                            </tr>
+                             <tr>
+                                <th scope="row">6</th>
+                                <td>Screening 2026</td>
+                                <td><span class="badge px-3 py-2" style="background-color: #ff4d6d;">Staf Acara</span></td>
+                                <td>Hm Sisfo UDINUS</td>
+                                <td>2026</td>
+                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERTIFIKAT & DOKUMENTASI -->
+        <section id="sertifikat" class="mb-5">
+            <h3 class="section-title">Dokumentasi & Sertifikat</h3>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="card card-custom p-2 text-center cert-card">
+                        <img src="/images/Sertifikat ICBC.jpeg" class="cert-img mb-2" alt="Sertifikat ICBC">
+                        <small class="fw-semibold text-dark">Panitia ICBC 2026</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-custom p-2 text-center cert-card">
+                        <img src="/images/Sertifikat Sisgath.jpeg" class="cert-img mb-2" alt="Sertifikat Sisgath">
+                        <small class="fw-semibold text-dark">Panitia Sisgath 2026</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-custom p-2 text-center cert-card">
+                        <img src="/images/Sertifikat Sensasi.jpeg" class="cert-img mb-2" alt="Sertifikat Sensasi">
+                        <small class="fw-semibold text-dark">Peserta Sensasi 2026</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-custom p-2 text-center cert-card">
+                        <img src="/images/Sertifikat PCP.jpeg" class="cert-img mb-2" alt="Sertifikat PCP">
+                        <small class="fw-semibold text-dark">Peserta PCP 2026</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FORM SARAN -->
+        <section class="mb-5">
+            <h3 class="section-title">Form Pesan & Saran</h3>
+            <div class="card card-custom p-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label fw-medium">Email Anda</label>
+                        <input type="email" class="form-control py-2" id="inputEmail" placeholder="nama@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPesan" class="form-label fw-medium">Pesan / Saran</label>
+                        <textarea class="form-control" id="inputPesan" rows="3" placeholder="Tuliskan pesan atau saran Anda di sini..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-pink fw-semibold px-4 py-2">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+        <!-- PENUTUP -->
+        <section class="mb-5">
+            <h3 class="section-title">Penutup</h3>
+            <div class="card card-custom p-4">
+                <p class="mb-0 text-secondary">
+                    Terima kasih sudah meluangkan waktu untuk mampir dan membaca portofolio singkat saya! Semoga halaman ini bisa memberikan gambaran mengenai perjalanan studi, minat di bidang teknologi, serta aktivitas organisasi yang telah saya jalani. Jangan ragu untuk memberikan saran atau menyapa melalui form di bawah ya! ✨
+                </p>
+            </div>
+        </section>
+        <!-- PENUTUP / FOOTER -->
+        <footer class="text-center py-4 text-muted border-top">
+            <p class="mb-0">&copy; 2026 Khusnul | Madebyinuls - Universitas Dian Nuswantoro</p>
+        </footer>
+
+    </div>
+
+    <!-- Script JS Bootstrap -->
+    <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Khusnul</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.css">
+    
+    <!-- File CSS External Baru Kamu -->
+    <link rel="stylesheet" href="style.css">
+</head>
+</body>
+</html>
