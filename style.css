@@ -3,11 +3,11 @@
    ========================================== */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 40px; /* Mengatur jarak stop scroll agar pas di bawah navbar */
+    scroll-padding-top: 95px; /* Mengatur jarak stop scroll agar pas di bawah navbar */
 }
 
 section, [id] {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 95px;
 }
 
 body {
