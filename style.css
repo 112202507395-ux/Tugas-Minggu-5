@@ -1,16 +1,25 @@
 /* ==========================================
    GLOBAL & BASE STYLES
    ========================================== */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px; /* Mengatur jarak stop scroll agar pas di bawah navbar */
+}
+
+section, [id] {
+    scroll-margin-top: 40px;
+}
+
 body {
+    position: relative; /* Wajib ada agar Bootstrap ScrollSpy berfungsi normal */
     padding-top: 85px;
     background-color: #fff5f7; /* Background Pink Soft */
     font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     color: #4a3e3e;
-    scroll-behavior: smooth;
 }
 
 /* ==========================================
-   NAVBAR STYLES
+   NAVBAR STYLES & EFEK AKTIF (SIMPEL & RAPI)
    ========================================== */
 .navbar-custom {
     background-color: #d63384 !important; /* Deep Pink Modern */
@@ -19,11 +28,22 @@ body {
 }
 
 .navbar-custom .nav-link {
-    transition: color 0.2s ease-in-out;
+    transition: all 0.2s ease;
+    padding: 6px 14px !important;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .navbar-custom .nav-link:hover {
-    color: #ffe5ec !important;
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Tampilan tombol menu yang sedang aktif diklik / di-scroll */
+.navbar-custom .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    color: #ffffff !important;
+    font-weight: 600;
 }
 
 .dropdown-menu {
@@ -151,8 +171,9 @@ body {
     transition: transform 0.3s ease;
 }
 
-.cert-card-inner:hover .cert-img {
-    transform: scale(1.02);
+.cert-card-inner:hover .cert-img,
+.card-custom:hover .cert-img {
+    transform: scale(1.03);
 }
 
 /* ==========================================
