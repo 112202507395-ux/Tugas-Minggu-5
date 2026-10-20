@@ -3,11 +3,10 @@
    ========================================== */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 95px; /* Mengatur jarak stop scroll agar pas di bawah navbar */
 }
 
 section, [id] {
-    scroll-margin-top: 95px;
+    scroll-margin-top: 90px;
 }
 
 body {
@@ -19,7 +18,7 @@ body {
 }
 
 /* ==========================================
-   NAVBAR STYLES & EFEK AKTIF (SIMPEL & RAPI)
+   NAVBAR STYLES & EFEK AKTIF
    ========================================== */
 .navbar-custom {
     background-color: #d63384 !important; /* Deep Pink Modern */
